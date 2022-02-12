@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    max-width: 58rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -24,6 +24,27 @@ ul.menu a {
     display: block;
 }
 
+ul.menu a:hover,
+ul.menu a:active {
+    color: #93ff14;
+}
+
+svg path, 
+svg rect, 
+polygon {
+    fill: #f5f5f5;
+}
+
+ul.menu a:hover path,
+ul.menu a:hover rect,
+ul.menu a:hover polygon {
+    fill: #93ff14;
+}
+
+svg {
+    width: 1.25rem;
+}
+
 /* Change from stacking navigation to a horizontal nav on larger viewports */
 @media only screen and (min-width: 30rem) {
     ul.menu {
@@ -37,6 +58,6 @@ ul.menu a {
         flex-grow: 1;
         flex-shrink: 0;
         text-align: center;
-        flex-basis: 170px;
+        flex-basis: auto;
     }
 }
